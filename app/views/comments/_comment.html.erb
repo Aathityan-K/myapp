@@ -1,0 +1,8 @@
+<% unless !comment.persisted? %>
+<div class="card">
+  <div class="card-body">
+    <b><%= comment.user.username %> : </b>
+    <%= comment.body %>
+  </div>
+</div>
+<% end %>
